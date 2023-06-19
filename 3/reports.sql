@@ -282,7 +282,7 @@ canceled as (
     from
         "order" o
     where
-        o.status_id = 8
+        o.status_id = 6
 ),
 complete_time as (
     select
@@ -297,7 +297,7 @@ complete_time as (
         "order" o
         inner join order_history coh on o.id = coh.order_id
     where
-        o.status_id = 3
+        o.status_id = 7
 ),
 report as (
     select

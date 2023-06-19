@@ -45,4 +45,4 @@ WHERE
     AND point_field ~=point(1.234, 3.432)
     AND line_field = '((23.312, 86.432),(12.321, 4.321))'
     AND varbit_field = '1010001100110'
-    AND uuid_field = '84fdc84e-1dcd-44a6-acb1-09ba31a9e0cd';
+    AND uuid_field = 'd1c247c3-77c8-499b-b6e2-79023b56b397'; -- (поменять)

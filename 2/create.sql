@@ -5,6 +5,7 @@ CREATE TYPE public.my_type AS
     example_int integer,
     example_int_array integer[]
 );
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS public.types_table (
     bigint_field bigint NOT NULL,
@@ -22,7 +23,7 @@ CREATE TABLE IF NOT EXISTS public.types_table (
     time_timezone_field time WITH time zone NOT NULL,
     time_field time without time zone NOT NULL,
     
-    enum_field some_enum NOT NULL,
+    enum_field my_enum NOT NULL,
     array_field integer [] NOT NULL,
 
     xml_field xml NOT NULL,
